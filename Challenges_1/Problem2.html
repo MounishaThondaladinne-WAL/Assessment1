@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html>
+  <head lang="en-us">
+    <title>Problem2</title>
+  </head>
+  <body>
+    <script>
+      const array1 = [1, 2, 3];
+      const array2 = [4, 5, 6];
+      const array3 = [...array1, ...array2];
+      console.log(array3);
+      const basicDetails = {
+        name: "abcde",
+        age: 10,
+        gender: "m",
+      };
+      const educationDetails = {
+        degree: "xyz",
+        college: "anc",
+      };
+      const personalDetails = { ...basicDetails, ...educationDetails };
+      console.log(personalDetails);
+    </script>
+  </body>
+</html>

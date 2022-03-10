@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html>
+  <head lang="en-us">
+    <title>Problem3</title>
+  </head>
+  <body>
+    <script>
+      function largestNumber(numArray) {
+        let number = numArray[0];
+        for (let i in numArray) {
+          if (numArray[i] > number) {
+            number = numArray[i];
+          }
+        }
+        return number;
+      }
+      const numArray = [1, 5, 7, 9];
+      const numArray2 = [-1, -5, 0, -100];
+      console.log(largestNumber(numArray));
+      console.log(largestNumber(numArray2));
+    </script>
+  </body>
+</html>

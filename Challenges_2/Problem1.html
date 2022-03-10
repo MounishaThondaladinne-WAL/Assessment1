@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html>
+  <head lang="en-us">
+    <title>Problem1</title>
+  </head>
+  <body>
+    <script>
+      function findFreq(str, char) {
+        const modifiedStr = str.toLowerCase();
+        const modifiedChar = char.toLowerCase();
+        let count = 0;
+        for (i in modifiedStr) {
+          if (modifiedStr[i] == modifiedChar) {
+            count += 1;
+          }
+        }
+        return count;
+      }
+      const findFreqChar = findFreq(
+        "How many times does the character occur in this sentence?",
+        "m"
+      );
+      const findFreqChar2 = findFreq(
+        "How many times does the character occur in this sentence?",
+        "h"
+      );
+      console.log(findFreqChar);
+      console.log(findFreqChar2);
+    </script>
+  </body>
+</html>

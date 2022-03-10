@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html>
+  <head lang="en-us">
+    <title>Problem2</title>
+  </head>
+  <body>
+    <script>
+      function areAllEqual(arr) {
+        let firstEle = arr[0];
+        let allEqual = false;
+        for (i in arr) {
+          if (arr[i] != firstEle) {
+            allEqual = false;
+            break;
+          }
+          allEqual = true;
+        }
+        return allEqual;
+      }
+      const areAllEaqual1 = areAllEqual(["test", "test", "test"]);
+      const areAllEqual2 = areAllEqual([1, 1, 1, 2]);
+      console.log(areAllEaqual1);
+      console.log(areAllEqual2);
+    </script>
+  </body>
+</html>

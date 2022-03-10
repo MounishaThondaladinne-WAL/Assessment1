@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html>
+  <head lang="en-us">
+    <title>Problem4</title>
+  </head>
+  <body>
+    <script>
+      let updateSalariesArray = [];
+      function updateSalaries(employeesArray, percent) {
+        for (let i in employeesArray) {
+          const percentage = (employeesArray[i] * percent) / 100;
+          const eachSalary = employeesArray[i] + percentage;
+          updateSalariesArray.push(eachSalary);
+        }
+        return updateSalariesArray;
+      }
+      const employeesArray = [100, 500, 700, 400];
+      const percent = 10;
+      console.log(updateSalaries(employeesArray, percent));
+    </script>
+  </body>
+</html>
